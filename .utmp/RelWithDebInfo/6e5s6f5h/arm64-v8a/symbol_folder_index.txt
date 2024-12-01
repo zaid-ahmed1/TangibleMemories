@@ -1,0 +1,1 @@
+C:\Users\zaida\Documents\TangibleMemories\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\6e5s6f5h\obj\arm64-v8a
