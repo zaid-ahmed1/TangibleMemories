@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b71fae31e6c7d438e8566dc713e666, type: 3}
+  m_Name: gs_Chair
+  m_EditorClassIdentifier: 
+  m_FormatVersion: 20231020
+  m_SplatCount: 1027106
+  m_BoundsMin: {x: -130.78949, y: -130.7917, z: -130.79066}
+  m_BoundsMax: {x: 130.79083, y: 130.78943, z: 130.79066}
+  m_DataHash:
+    serializedVersion: 2
+    Hash: 7d44b4763b3559b73f7397dffe937fe0
+  m_PosFormat: 2
+  m_ScaleFormat: 2
+  m_SHFormat: 3
+  m_ColorFormat: 2
+  m_PosData: {fileID: 4900000, guid: 3b450b7760214ab4480e651fe9300989, type: 3}
+  m_ColorData: {fileID: 4900000, guid: 634f90869eec8c3479ee06c1e7f896c5, type: 3}
+  m_OtherData: {fileID: 4900000, guid: 10a7ac148e1b66447a37dd5e49e4a73a, type: 3}
+  m_SHData: {fileID: 4900000, guid: 019b74bf47976264cacc45ba08bd0c37, type: 3}
+  m_ChunkData: {fileID: 4900000, guid: 699543274ff5bfb4c9cdedab8744cfd3, type: 3}
+  m_Cameras: []
