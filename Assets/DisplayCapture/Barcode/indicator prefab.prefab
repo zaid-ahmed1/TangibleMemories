@@ -1938,6 +1938,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5876244809360227463, guid: 4b66f906ddcfc4f46ac726c7862a8a23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5876244810169329958, guid: 4b66f906ddcfc4f46ac726c7862a8a23, type: 3}
       propertyPath: m_VideoClip
       value: 
