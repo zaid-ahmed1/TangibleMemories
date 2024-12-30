@@ -7,10 +7,12 @@ It works on the Meta Quest 3 headset, and the Meta Quest 3s (untested).
 The prototype scans a QR code sticker which can be placed on any physical object, then displays an option to enter an XR memory (in this case, a LiDAR scan of a room). Upon pressing the *Immerse!* button, users are immersed in the XR memory.
 
 ## Demo video
-[View demo video]([https://drive.google.com/file/d/1Cjmj2VF8y7oyseL43Zvd-WS8ykAxJqeq/view?usp=sharing](https://drive.google.com/file/d/1o5lQPipK9xD9BnOwcPuS56LY1ME5SIUf/view)).
+[View demo video](https://drive.google.com/file/d/1o5lQPipK9xD9BnOwcPuS56LY1ME5SIUf/view?usp=sharing).
 
 ## APK download
 You can demo this prototype on your own Quest 3 or Quest 3s headset: [Download APK](https://drive.google.com/file/d/1Cjmj2VF8y7oyseL43Zvd-WS8ykAxJqeq/view?usp=sharing).
+
+Install to your Quest using [SideQuest](https://sidequestvr.com/setup-howto) or Android's [adb](https://developer.android.com/studio/command-line/adb).
 
 ## Usage
 Upon launching the application and allowing it to access your display, look at the QR code provided below through the headset.
