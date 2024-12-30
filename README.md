@@ -4,7 +4,7 @@
 
 This is an initial prototype for TangibleMoments, a framework we proposed which enables users to embed XR memories onto physical objects. 
 It works on the Meta Quest 3 headset, and the Meta Quest 3s (untested).
-The prototype scans a QR code sticker which can be placed on any physical object, then displays an option to enter an XR memory (in this case, a LiDAR scan of a room). Upon pressing the *Immerse!* button, users are immersed in the XR memory.
+The prototype scans a QR code sticker which can be placed on any physical object, then displays an preview of an an XR memory. Upon pressing the *Immerse!* button, users are immersed in the memory (in this case, a LiDAR scan of a room).
 
 ## Demo video
 [View demo video](https://drive.google.com/file/d/1o5lQPipK9xD9BnOwcPuS56LY1ME5SIUf/view?usp=sharing).
