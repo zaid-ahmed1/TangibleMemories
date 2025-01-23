@@ -17,7 +17,7 @@ namespace Anaglyph.DisplayCapture.Barcodes
 
 		public void Set(string text, Vector3[] corners)
 		{
-			if (text.StartsWith("https://zaid-ahmed.me/"))
+			if (text.StartsWith("https://tangible-moments.me/"))
 			{
 				// Remove the prefix
 				text = text.Substring(22);
