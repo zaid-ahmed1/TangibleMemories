@@ -19,7 +19,7 @@ namespace Anaglyph.DisplayCapture.Barcodes
 
 		void Awake()
 		{
-			postgres = FindObjectOfType<Postgres>();
+			postgres = FindFirstObjectByType<Postgres>();
 
 			if (postgres == null)
 			{
@@ -67,6 +67,8 @@ namespace Anaglyph.DisplayCapture.Barcodes
 					if (memory != null)
 					{
 						textMesh.text = memory.qr_code;
+						PlayerPrefs.SetString("currentMemoryFileKey", memory.filekey);
+						PlayerPrefs.Save();
 					}
 					else
 					{
