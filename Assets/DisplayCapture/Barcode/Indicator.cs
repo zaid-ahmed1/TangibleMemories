@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Anaglyph.DisplayCapture.Barcodes
@@ -8,11 +9,24 @@ namespace Anaglyph.DisplayCapture.Barcodes
 		[SerializeField] private LineRenderer lineRenderer;
 		public LineRenderer LineRenderer => lineRenderer;
 
+		private Postgres postgres;
+
 		[SerializeField] private TMP_Text textMesh;
 		public TMP_Text TextMesh => textMesh;
 
 		private Vector3[] offsetPositions = new Vector3[4];
 
+
+		void Awake()
+		{
+			postgres = FindObjectOfType<Postgres>();
+
+			if (postgres == null)
+			{
+				Debug.LogError("Could not find a Postgres instance in the scene.");
+			}
+		}
+		
 		public void Set(BarcodeTracker.Result result) => Set(result.text, result.corners);
 
 		public void Set(string text, Vector3[] corners)
@@ -20,7 +34,7 @@ namespace Anaglyph.DisplayCapture.Barcodes
 			if (text.StartsWith("https://tangible-moments.me/"))
 			{
 				// Remove the prefix
-				text = text.Substring(22);
+				text = text.Substring(28);
 				Vector3 topCenter = (corners[2] + corners[3]) / 2f;
 				transform.position = topCenter;
 
@@ -38,8 +52,33 @@ namespace Anaglyph.DisplayCapture.Barcodes
 
 				transform.rotation = Quaternion.LookRotation(normal, up);
 
-				lineRenderer.SetPositions(offsetPositions);
-				textMesh.text = text;
+				if (lineRenderer != null)
+				{
+					lineRenderer.SetPositions(offsetPositions);
+				}
+				else
+				{
+					Debug.LogError("LineRenderer is null on Indicator.");
+				}
+
+				if (textMesh != null && postgres != null)
+				{
+					var memory = postgres.FindMemoryByQRCode(text);
+					if (memory != null)
+					{
+						textMesh.text = memory.qr_code;
+					}
+					else
+					{
+						Debug.LogWarning($"No memory found for QR code: {text}");
+						textMesh.text = "(Unknown QR)";
+					}
+				}
+				else
+				{
+					if (textMesh == null) Debug.LogError("TextMesh is null on Indicator.");
+					if (postgres == null) Debug.LogError("Postgres component is null on Indicator.");
+				}
 			}
 		}
 	}

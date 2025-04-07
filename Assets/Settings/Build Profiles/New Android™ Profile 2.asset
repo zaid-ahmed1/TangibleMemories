@@ -20,13 +20,13 @@ MonoBehaviour:
     rid: 1221367225741737985
   m_OverrideGlobalSceneList: 1
   m_Scenes:
-  - m_enabled: 0
+  - m_enabled: 1
     m_path: Assets/DisplayCapture/Demo.unity
   - m_enabled: 0
     m_path: Assets/Scenes/Video.unity
-  - m_enabled: 0
-    m_path: Assets/Scenes/roomScene VR.unity
   - m_enabled: 1
+    m_path: Assets/Scenes/roomScene VR.unity
+  - m_enabled: 0
     m_path: Assets/Scenes/3d Video.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
@@ -37,7 +37,7 @@ MonoBehaviour:
     - rid: 1221367225741737985
       type: {class: AndroidPlatformBuildSettings, ns: UnityEditor.Android, asm: UnityEditor.Android.Extensions}
       data:
-        m_Development: 0
+        m_Development: 1
         m_ConnectProfiler: 0
         m_BuildWithDeepProfilingSupport: 0
         m_AllowDebugging: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
         m_DebugSymbolLevel: 1
         m_DebugSymbolFormat: 5
         m_CurrentDeploymentTargetId: __builtin__target_default
-        m_BuildType: 2
+        m_BuildType: 1
         m_BuildAppBundle: 0
         m_IPAddressToConnect: 
         m_SymlinkSources: 0

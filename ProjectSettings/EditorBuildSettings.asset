@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Video.unity
     guid: ba60b80e41e105b48883321256e1f46a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/roomScene VR.unity
     guid: 863dd8855ab55004bad4325e629a4b37
   m_configObjects:

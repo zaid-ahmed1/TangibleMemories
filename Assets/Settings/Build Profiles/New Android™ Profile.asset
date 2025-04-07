@@ -24,7 +24,7 @@ MonoBehaviour:
     m_path: Assets/DisplayCapture/Demo.unity
   - m_enabled: 0
     m_path: Assets/Scenes/Video.unity
-  - m_enabled: 1
+  - m_enabled: 0
     m_path: Assets/Scenes/roomScene VR.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
