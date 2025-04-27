@@ -73,7 +73,8 @@ namespace Anaglyph.DisplayCapture.Barcodes
 					else
 					{
 						Debug.LogWarning($"No memory found for QR code: {text}");
-						textMesh.text = "(Unknown QR)";
+						textMesh.text = text;
+						textMesh.color = new Color32(255, 0, 0, 255);
 					}
 				}
 				else
